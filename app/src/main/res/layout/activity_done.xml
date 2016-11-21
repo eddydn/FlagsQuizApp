@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPage"
+    tools:context="dev.edmt.flagsquizapp.MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:background="@drawable/round_corner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/btnGroup"
+            android:paddingTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/txtTotalScore"
+               android:layout_gravity="center"
+               android:text="Score : 0"
+               android:textSize="30sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtTotalQuestion"
+                android:layout_gravity="center"
+                android:text="Passed : 0/30"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+                android:id="@+id/doneProgressBar"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnTryAgain"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_margin="8dp"
+                android:background="#FF8A80"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="TRY AGAIN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:theme="@style/MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

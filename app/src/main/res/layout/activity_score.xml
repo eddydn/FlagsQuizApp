@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPage"
+    tools:context="dev.edmt.flagsquizapp.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/flags"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="BEST SCORE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <ListView
+            android:id="@+id/lstRanking"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

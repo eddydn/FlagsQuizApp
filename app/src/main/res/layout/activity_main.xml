@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/backgroundPage"
+tools:context="dev.edmt.flagsquizapp.MainActivity">
+
+
+<ImageView
+    android:id="@+id/flags"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/united_states_of_america"
+    android:gravity="center"
+    />
+
+<RelativeLayout
+    android:layout_below="@+id/flags"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    android:padding="20dp"
+    android:elevation="4dp"
+    android:background="@drawable/round_corner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/btnGroup"
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPlay"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_margin="8dp"
+            android:background="#AD1457"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="PLAY"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnScore"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_margin="8dp"
+            android:background="#FF8A80"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="SCORE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:theme="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/btnGroup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:max="3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtMode"
+            android:layout_gravity="center"
+            android:text="EASY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</RelativeLayout>
