@@ -58,7 +58,7 @@ public class CustomAdapter extends BaseAdapter {
         else
             imgTop.setImageResource(R.drawable.top3);
 
-        txtTop.setText(String.valueOf(lstRanking.get(position).getScore()));
+        txtTop.setText(String.format("%.1f",lstRanking.get(position).getScore()));
         return view;
 
     }

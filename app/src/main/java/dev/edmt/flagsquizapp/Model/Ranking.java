@@ -6,9 +6,9 @@ package dev.edmt.flagsquizapp.Model;
 
 public class Ranking {
     private int Id;
-    private int Score;
+    private double Score;
 
-    public Ranking(int id, int score) {
+    public Ranking(int id, double score) {
         Id = id;
         Score = score;
     }
@@ -21,11 +21,11 @@ public class Ranking {
         Id = id;
     }
 
-    public int getScore() {
+    public double getScore() {
         return Score;
     }
 
-    public void setScore(int score) {
+    public void setScore(double score) {
         Score = score;
     }
 }
